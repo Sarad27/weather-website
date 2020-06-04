@@ -11,7 +11,7 @@ const forecast = (lat, lon, callback) =>{
             callback('Unable to find location', undefined)
         }else{
             callback(undefined, 
-                'The temperature outside is ' + body.main.temp + ' and there is ' + body.weather[0].description
+                'The temperature outside is ' + body.main.temp + ' and there is ' + body.weather[0].description  + '. The maximum and minimum temperature to reach are ' +body.main.temp_max + " and " + body.main.temp_min
             )
         }
     })
